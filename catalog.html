@@ -9,30 +9,32 @@
     <div class="container">
       <div class="user-top">
         <div class="indexlogo">
-          <a href="/"><img src="img/index-logo.png" width="150" height="38" alt="Техномарт"></a>
+          <a href="/"><img src="http://placehold.it/150x100" alt="Техномарт"></a>
         </div>
-        <div class="search-top">
+        <form class="search-top">
           <label>Поиск:<input name="search" value="" size="20" type="text"></label>
-        </div>
+        </form>
         <div class="order-top">
-          <a class="order" href="#">Закладки</a>
-          <a class="basket" href="#">Корзина</a>
+          <a class="order" href="#">Закладки:0</a>
+          <a class="basket" href="#">Корзина:10</a>
           <a class="order" href="#">Оформить заказ</a>
         </div>
       </div>
       <div class="user-mid">
-        <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <div class="store-description">
+          <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        </div>
         <section class="top-contacts">
-          <a href="tel:+78126660266">+7 (812) 555-05-55</a>
+          <a class="phone-shop" href="tel:+78126660266">+7 (812) 555-05-55</a>
           <p>г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
         </section>
         <div class="user-block">
           <div class="user">
           <a class="profile-user" href="#">Равшан Джамшутович</a>
-          <a class="exit" href="#"></a>
+          <a class="exit" href="/"><img src="http://placehold.it/150x100" alt="Выход"></a>
+          <a class="my-file" href="#">Мои заказы</a>
+          <a class="my-file" href="#">Личный кабинет</a>
           </div>
-        <a class="my-file" href="#">Мои заказы</a>
-        <a class="my-file" href="#">Личный кабинет</a>
         </div>
       </div>
       </div>
@@ -61,53 +63,54 @@
           </li>
         </ul>
       </nav>
-    </div>
   </header>
   <main class="container">
     <div class="way">
-      <a class="home-way" href="/"></a>
-      <a class="catalog-way" href="#">Каталог</a>
-      <a class="instrument-way" href="#">Инструмент</a>
+      <ul>
+        <li><a class="catalog-way" href="/"></a></li>
+        <li><a class="catalog-way" href="#">Каталог</a></li>
+        <li><a class="catalog-way" href="#">Инструмент</a></li>
+      </ul>
       Перфораторы
     </div>
     <div class="main-name">
       <h2>Перфораторы</h2>
     </div>
-    <section class="filter">
+    <aside class="filter">
       <form class="filter-range" action="https://echo.htmlacademy.ru" method="get">
-        <div class="price-blocks first-block">
+        <div class="price-blocks block">
         <span class="peach">Фильтр:</span>
-          Цена:
-        <input type="range" class="price-range peach" min="0" max="3000" step="1" value="1500">
+          <h3>Цена:</h3>
+        <input type="range" name="price-slider" class="price-range peach" min="0" max="3000" step="1" value="1500">
         </div>
-        <div class="price-blocks second-block">
-          Производители:
-          <label>BOSCH<input type="checkbox" name="producers[]" value="BOSCH" checked></label><br>
-          <label>Интерскол<input type="checkbox" name="producers[]" value="Интерскол"></label><br>
-          <label>Makita<input type="checkbox" name="producers[]" value="Makita" checked></label><br>
-          <label>DeWOLT<input type="checkbox" name="producers[]" value="DeWOLT"></label><br>
-          <label>Hitachi<input type="checkbox" name="producers[]" value="Hitachi"></label><br>
+        <div class="price-blocks block">
+          <h3>Производители:</h3>
+          <label><input type="checkbox" name="producers[]" value="BOSCH" checked> BOSCH</label><br>
+          <label><input type="checkbox" name="producers[]" value="Интерскол">Интерскол</label><br>
+          <label><input type="checkbox" name="producers[]" value="Makita" checked>Makita</label><br>
+          <label><input type="checkbox" name="producers[]" value="DeWOLT">DeWOLT</label><br>
+          <label><input type="checkbox" name="producers[]" value="Hitachi">Hitachi</label><br>
         </div>
-        <div class="price-blocks third-block">
-          Питание:
+        <div class="supply-blocks block">
+          <h3>Питание:</h3>
           <label>Аккумуляторые<input type="radio" name="producers[]" value="Аккумуляторые" checked></label><br>
           <label>Сетевые<input type="radio" name="producers[]" value="Сетевые"></label><br>
         </div>
         <button class="btn-catalog" type="submit">Показать</button>
       </form>
-      <div class="sorting peach">
-        Сортировка:
-        <button class="btn-sorting-product" type="submit">По цене</button>
-        <button class="btn-sorting-product" type="submit">По типу</button>
-        <button class="btn-sorting-product" type="submit">По функционалу</button>
-      </div>
-    </section>
+    </aside>
 
     <section class="all-products">
-      <article class="products">
-        <a class="product" href="#">
+      <div class="sorting peach">
+        <h3>Сортировка:</h3>
+        <a class="btn-sorting-product" href="#">По цене</a>
+        <a class="btn-sorting-product" href="#">По типу</a>
+        <a class="btn-sorting-product" href="#">По функционалу</a>
+      </div>
+      <div class="product">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 3000
+          <span class="name-product">Перфоратор BOSCH BFG 3000</span>
           <span class="old-price">
               22500 Р.
             </span>
@@ -115,11 +118,11 @@
               15500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product" href="#">
+      </div>
+      <div class="product">
+        <a  href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 6000
+          <span class="name-product">Перфоратор BOSCH BFG 6000</span>
           <span class="old-price">
               30500 Р.
             </span>
@@ -127,22 +130,23 @@
               25500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product active" href="#">
-          <button class="btn-by-product" type="submit">Купить</button>
-          <button class="btn-bmarks-product" type="submit">В закладки</button>
-          Перфоратор BOSCH BFG 2000
-            </span>
+      </div>
+      <div class="product active guidance">
+        <a href="#">
+          <a class="btn-by-product" href="#">Купить</a>
+          <a class="btn-bmarks-product" href="#">В закладки</a>
+          <span class="name-product">
+            Перфоратор BOSCH BFG 2000</span>
           <span class="new-price">
               25500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product" href="#">
+      </div>
+      <div class="product">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 3000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 3000</span>
           <span class="old-price">
               22500 Р.
             </span>
@@ -150,11 +154,12 @@
               15500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product active" href="#">
+      </div>
+      <div class="product active">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 6000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 6000</span>
           <span class="old-price">
               30500 Р.
             </span>
@@ -162,20 +167,22 @@
               25500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product" href="#">
+      </div>
+      <div class="product">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 2000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 2000</span>
           <span class="new-price">
               12500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product active" href="#">
+      </div>
+      <div class="product active">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 3000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 3000</span>
           <span class="old-price">
               22500 Р.
             </span>
@@ -183,11 +190,12 @@
               15500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product" href="#">
+      </div>
+      <div class="product">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 6000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 6000</span>
           <span class="old-price">
               30500 Р.
             </span>
@@ -195,16 +203,17 @@
               25500 P.
             </span>
         </a>
-      </article>
-      <article class="products">
-        <a class="product" href="#">
+      </div>
+      <div class="product">
+        <a href="#">
           <img src="http://placehold.it/150x100">
-          Перфоратор BOSCH BFG 2000
+          <span class="name-product">
+            Перфоратор BOSCH BFG 2000</span>
           <span class="new-price">
               25500 P.
             </span>
         </a>
-      </article>
+      </div>
     </section>
     <div class="pages">
       <a href="#" class="open">1</a>
@@ -222,7 +231,7 @@
   <footer class="container">
     <section class="footer-up">
       <div class="logo-address">
-        <a href="/"><img src="img/index-logo.png" width="150" height="38" alt="Техномарт"></a>
+        <a href="/"><img src="http://placehold.it/150x100" alt="Техномарт"></a>
         <p>г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8
           <a href="tel:+78126660266">+7 (812) 555-05-55</a>
         </p>
@@ -277,7 +286,7 @@
       </div>
       <div class="footer-feedback">
         <p>Обратная связь:</p>
-        <a class="bttn mail" href="#">mail@htmlacademy.ru</a>
+        <a href="mailto:https://htmlacademy.ru">HTML Academy</a>
       </div>
       <div class="footer-copyright">
         <p>Разработано:</p>
