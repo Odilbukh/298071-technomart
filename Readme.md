@@ -14,6 +14,8 @@ _`.editorconfig`, `.gitignore`, `Contributing.md`, `Readme.md`._
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
+привет мир
+
 Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
 
 #### 2. Создайте форк
