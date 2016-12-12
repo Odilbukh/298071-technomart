@@ -297,6 +297,7 @@ address .phone-number {
   font-size: 21px;
   line-height: 1.05;
   text-align: right;
+  margin-top: 52px;
 }
 
 .user-block a {
@@ -309,13 +310,11 @@ address .phone-number {
 .user-login a {
   color: black;
   background-color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 .user-block .btn-sign-in:hover,
-.user-block .btn-sign-up:hover,
-.user-block .orders-btn:hover,
-.user-block .ptofile-btn:hover {
+.user-block .btn-sign-up:hover, {
   color: red;
 }
 
@@ -337,4 +336,62 @@ address .phone-number {
 .user-block .btn-sign-in:before {
   margin: 0 12px;
   opacity: 0.3;
+}
+
+.top-menu {
+  display: inline-block;
+  background-color: #32425c;
+  box-shadow: 0 5px 0 0 #293449;
+  margin-bottom: 60px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.top-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-menu li {
+  float: left;
+  flex-grow: 1;
+  font-size: 17px;
+  padding: 5px 0px;
+}
+
+.top-menu a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.top-menu li:hover {
+  background-color: #293449;
+  opacity: 0.5;
+}
+.top-menu li:active {
+  background-color: #1d2739;
+}
+
+.index-content {
+  padding-top: 60px;
+}
+
+.features {
+  font-family: 'Cuprum', 'Arial', sans-serif;
+  margin-bottom: 33px;
+}
+
+.features article {
+  position: relative;
+  float: left;
+  width: 300px;
+  height: 123px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: normal;
 }
